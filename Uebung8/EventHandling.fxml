@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.*?>
+<?import javafx.collections.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane minWidth="315.0" prefHeight="307.0" prefWidth="421.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="gmbh.conteco.EventHandlingController">
+  <children>
+    <VBox id="VBox" alignment="CENTER" layoutX="14.0" layoutY="17.0" spacing="5.0">
+      <children>
+        <Button fx:id="myButton" mnemonicParsing="false" prefWidth="-1.0" text="Button" VBox.vgrow="SOMETIMES" />
+        <CheckBox fx:id="myCheckBox" mnemonicParsing="false" text="CheckBox" />
+        <ComboBox fx:id="myComboBox">
+          <items>
+            <FXCollections fx:factory="observableArrayList">
+              <String fx:value="Item 1" />
+              <String fx:value="Item 2" />
+              <String fx:value="Item 3" />
+            </FXCollections>
+          </items>
+        </ComboBox>
+        <Hyperlink fx:id="myHyperlink" text="Hyperlink" />
+        <Slider fx:id="mySlider" />
+        <TextField fx:id="myTextField" prefWidth="168.0" />
+      </children>
+    </VBox>
+    <ListView fx:id="myListView" layoutX="212.0" layoutY="17.0" prefHeight="154.0" prefWidth="196.0" />
+    <TextArea fx:id="outputTextArea" layoutX="13.0" layoutY="194.0" prefHeight="99.0" prefWidth="395.0" wrapText="true" />
+    <Separator layoutX="14.0" layoutY="182.0" prefWidth="395.0" />
+  </children>
+</AnchorPane>

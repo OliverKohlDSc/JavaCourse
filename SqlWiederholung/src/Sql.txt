@@ -1,0 +1,31 @@
+DROP TABLE Employee;
+
+CREATE TABLE IF NOT EXISTS  Employee (
+   id int NOT NULL PRIMARY KEY auto_increment,
+   -- identity = auto_increment int
+  name varchar(30),
+  age int NULL--,
+  --street varchar(30)
+);
+
+--ALTER TABLE Employee ADD street varchar(30);
+
+
+INSERT INTO Employee (name, age) VALUES ('Ahmed Er', 23);
+INSERT INTO Employee (name, age) VALUES ('Ayse Asin', 20);
+INSERT INTO Employee (name, age) VALUES ('Josef Mustermann', 30);
+INSERT INTO Employee (name, age) VALUES ('Jane Doe', 77);
+
+Select id, name, age from employee;
+
+UPDATE Employee
+SET
+  name = 'Jane Lane'
+WHERE id = 4;
+
+Select id, name, age from employee;
+
+--DELETE FROM Employee WHERE id = 1 and age = 23;
+DELETE FROM Employee WHERE id = 1 or id = 3;
+
+Select id, name, age from employee;

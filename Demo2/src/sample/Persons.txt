@@ -1,0 +1,5 @@
+Albert;32
+Ayse;50
+Anna;16
+Pascal;72
+Alfred;80

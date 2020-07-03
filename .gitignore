@@ -1,0 +1,4 @@
+*.class
+.metadata/
+.idea/
+Java 8/
